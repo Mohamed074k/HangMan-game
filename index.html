@@ -1,0 +1,62 @@
+<!-- By Mohamed Elsayed :[www.linkedin.com/in/mohamed-elsayed-2623602a1] -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-screen" id="startScreen">
+        <h1>Hangman Adventure</h1>
+        <p>Guess the hidden word before the stick figure meets its fate!</p>
+        <button class="start-btn" id="startBtn">Start Game</button>
+    </div>
+
+    <div class="container" id="gameContainer">
+        <h1>Hangman Adventure</h1>
+        
+        <div class="difficulty">
+            <button class="difficulty-btn active" data-difficulty="easy">Easy</button>
+            <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+            <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+        </div>
+        
+        <div class="game-area">
+            <div class="hangman-container">
+                <canvas id="hangmanCanvas" width="300" height="300"></canvas>
+                <div class="status">
+                    <div class="status-item">Guesses left: <span id="guessesLeft">6</span></div>
+                    <div class="status-item">Wrong letters: <span class="wrong-letters" id="wrongLetters"></span></div>
+                </div>
+            </div>
+            
+            <div class="game-info">
+                <div class="word-display" id="wordDisplay"></div>
+                <div class="keyboard" id="keyboard"></div>
+                <button class="btn" id="restartBtn">Restart Game</button>
+            </div>
+        </div>
+        <footer>
+            <p>© <span id="currentYear"></span> Hangman Adventure. All rights reserved.</p>
+            <p>Created by <a href="https://github.com/Mohamed074k" target="_blank">Mohamed Elsayed</a></p>
+        </footer>
+    </div>
+    
+    <div class="modal" id="resultModal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Congratulations!</h2>
+            <p id="modalMessage">You guessed the word correctly!</p>
+            <div class="word-reveal" id="wordReveal"></div>
+            <button class="btn" id="playAgainBtn">Play Again</button>
+        </div>
+    </div>
+
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
