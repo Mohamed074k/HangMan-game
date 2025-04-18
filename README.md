@@ -1,4 +1,5 @@
 Hangman Adventure 🎮✨
+
 A modern, interactive Hangman game built with HTML, CSS, and JavaScript. Guess the hidden word before the stick figure meets its fate!
 
 Features 🌟
